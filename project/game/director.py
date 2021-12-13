@@ -46,17 +46,17 @@ class Director(arcade.Window):
         self.road_list = SpriteList()
         self.grass_list = SpriteList()
         self.all_sprites = SpriteList()
-        self.frog = Frog('project\game\images\\frog.png', SCALING)
+        self.frog = Frog('project/game/images/frog.png', SCALING)
         self.frog_list = SpriteList()
         self.scoreboard = Scoreboard()
         self.gameboard = Gameboard()
         self.collision_handler = Collision_Handler()
 
         #Loads song to be played when game starts : Song credit to @shiru8bit
-        self.sound_song = arcade.load_sound('project\game\sounds\\a_little_journey.mp3')
+        self.sound_song = arcade.load_sound('project/game/sounds/a_little_journey.mp3')
 
         #Loads death sound
-        self.sound_die = arcade.load_sound('project\game\sounds\gameover2.wav')
+        self.sound_die = arcade.load_sound('project/game/sounds/gameover2.wav')
 
         
     def start_game(self):
